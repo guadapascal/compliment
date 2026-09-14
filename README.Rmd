@@ -14,8 +14,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-compliment generates randomized, uplifting compliments by combining
-adjectives and traits from a built-in word bank.
+compliment generates randomized, uplifting compliments and farewells by
+combining adjectives, traits, and closings from built-in word banks.
 
 ## Installation
 
@@ -48,4 +48,16 @@ of `n` raise an informative error:
 
 ```{r, error = TRUE}
 compliment(0)
+```
+
+Generate a random goodbye with `farewell()`:
+
+```{r}
+farewell()
+```
+
+Like `compliment()`, it also accepts `n` to generate several at once:
+
+```{r}
+farewell(3)
 ```

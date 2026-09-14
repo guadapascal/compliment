@@ -7,6 +7,14 @@
 \description{
 Generates randomized, uplifting compliments by combining adjectives and traits from a built-in word bank.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/guadapascal/compliment}
+  \item Report bugs at \url{https://github.com/guadapascal/compliment/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: First Last \email{first.last@example.com}
 
