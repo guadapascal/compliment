@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# compliment
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+compliment generates randomized, uplifting compliments by combining
+adjectives and traits from a built-in word bank.
+
+## Installation
+
+You can install the development version of compliment from
+[GitHub](https://github.com/guadapascal/compliment) with:
+
+``` r
+# install.packages("pak")
+pak::pak("guadapascal/compliment")
+```
+
+## Usage
+
+Generate a single compliment:
+
+```{r example}
+library(compliment)
+
+compliment()
+```
+
+Generate several compliments at once with `n`:
+
+```{r}
+compliment(5)
+```
+
+`compliment()` validates its input, so non-numeric or non-positive values
+of `n` raise an informative error:
+
+```{r, error = TRUE}
+compliment(0)
+```
